@@ -760,6 +760,13 @@ p {
   .section-container {
     padding: 0 var(--spacing-md);
   }
+
+  .swipe-sessions-card {
+    width: 400px;
+    height: 400px;
+    padding-bottom: var(--spacing-md);
+    
+  }
 }
 
 @media only screen and (max-width: 1010px) {
@@ -777,6 +784,12 @@ p {
 
   .integrations-section .col-left {
     width: 90%;
+  }
+
+  .swipe-sessions-card {
+    width: 360px;
+    height: 450px;
+    padding: 0;
   }
 }
 
@@ -873,6 +886,25 @@ p {
   #globe {
     opacity: 10%;
   }
+
+    /* VIRTUAL EVENTS SECTION */
+    .virtual-events-section .swipe-sessions-card {
+      margin: var(--spacing-lg) 0;
+      width: 100%;
+    }
+  
+    .virtual-events-section .swipe-sessions-card .secondary-text {
+      width: 100%;
+    }
+  
+    .virtual-events-section .swipe-sessions-card .card-top {
+      height: 40%;
+    }
+  
+    #sessions-logo {
+      width: 300px;
+    }
+
 }
 
 html,
