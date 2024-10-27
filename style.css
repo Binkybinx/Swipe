@@ -767,16 +767,35 @@ p {
     width: 400px;
     height: 400px;
     padding-bottom: var(--spacing-md);
-    
+  }
+
+  :root {
+    --h1-size: 80px;
+    --h1-height: 85px;
+  }
+  .hero-phone {
+    height: 550px;
+    transform: translateY(-60px);
+  }
+
+  .hero .col-left {
+    width: 60%;
+  }
+  .hero .col-right {
+    width: 40%;
+  }
+
+  #gradient-canvas {
+    height: 900px;
   }
 }
 
 @media only screen and (max-width: 1010px) {
-  #api-code, #terminal-code {
+  #api-code,
+  #terminal-code {
     width: 100%;
     height: auto;
   }
-
 }
 @media only screen and (max-width: 905px) {
   /* INTEGRATIONS SECTION */
@@ -798,6 +817,16 @@ p {
 }
 
 @media only screen and (max-width: 840px) {
+  :root {
+    --h1-size: 70px;
+    --h1-height: 75px;
+  }
+  /* HERO SECTION */
+  .hero-phone {
+    transform: translateY(-85px);
+  }
+
+
   .partners-grid img {
     width: 100%;
     height: auto;
@@ -807,10 +836,35 @@ p {
 /* TABLET SIZE */
 @media only screen and (max-width: 768px) {
   :root {
-    --h1-size: 64px;
-    --h1-height: 72px;
+    --h1-size: 58px;
+    --h1-height: 65px;
     --h3-size: 34px;
     --h6-size: 16px;
+  }
+
+  /* HERO STYLES */
+  #gradient-canvas {
+    height: 890px;
+  }
+  main {
+    margin: 0;
+  }
+
+  .hero .two-column {
+    align-items: center;
+  }
+
+  .hero .col-left {
+    width: 60%;
+  }
+
+  .hero .col-right {
+    width: 40%;
+  }
+
+  .hero-phone {
+    height: 450px;
+    transform: translateX(32px);
   }
 
   /* UNIFIED PLATFORM */
@@ -827,17 +881,17 @@ p {
     width: 100%;
   }
 
-    /* WHY SWIPE */
-    .why-swipe-section .card-container {
-      flex-wrap: wrap;
-    }
-    .why-swipe-section .card-container .card {
-      width: 50%;
-      /* margin: 0; */
-      margin: var(--spacing-md) 0;
-    }
+  /* WHY SWIPE */
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+  }
+  .why-swipe-section .card-container .card {
+    width: 50%;
+    /* margin: 0; */
+    margin: var(--spacing-md) 0;
+  }
 
-      /* GLOBAL SCALE SECTION */
+  /* GLOBAL SCALE SECTION */
 
   .global-section .card-container {
     flex-wrap: wrap;
@@ -859,7 +913,6 @@ p {
   .swipe-sessions-card {
     width: 300px;
     height: 480px;
-   
   }
 
   #sessions-logo {
@@ -878,11 +931,17 @@ p {
     width: 100%;
     margin: var(--spacing-md) 0;
   }
-
 }
 
 /* MOBILE SIZE */
 @media only screen and (max-width: 550px) {
+  :root {
+    --h1-size: 58px;
+    --h1-height: 65px;
+    --h3-size: 34px;
+    --h6-size: 16px;
+  }
+
   .two-column {
     flex-direction: column;
   }
@@ -896,21 +955,38 @@ p {
     padding: 0;
   }
 
+  /* NAVBAR STYLES */
+  .navbar {
+    margin: 0 0 var(--spacing-lg) 0;
+  }
+
+  /* HERO STYLES */
+  #gradient-canvas {
+    height: 820px;
+  }
+  main {
+    margin: var(--spacing-lg) 0 0 0;
+  }
+
+  .hero .two-column .hero-phone-container {
+    display: none;
+  }
+
   .partners-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-    /* WHY SWIPE */
-    .why-swipe-section .card-container .card {
-      width: 100%;
-      margin: var(--spacing-sm) 0;
-    }
-  
-    .why-swipe-section .card-container .card .icon {
-      height: 35px;
-    }
+  /* WHY SWIPE */
+  .why-swipe-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
 
-      /* GLOBAL SECTION */
+  .why-swipe-section .card-container .card .icon {
+    height: 35px;
+  }
+
+  /* GLOBAL SECTION */
 
   .global-section .card-container .card {
     width: 100%;
@@ -921,47 +997,53 @@ p {
     opacity: 10%;
   }
 
-    /* VIRTUAL EVENTS SECTION */
-    .virtual-events-section .swipe-sessions-card {
-      margin: var(--spacing-lg) 0;
-      width: 100%;
-    }
-  
-    .virtual-events-section .swipe-sessions-card .secondary-text {
-      width: 100%;
-    }
-  
-    .virtual-events-section .swipe-sessions-card .card-top {
-      height: 40%;
-    }
-  
-    #sessions-logo {
-      width: 300px;
-    }
+  /* VIRTUAL EVENTS SECTION */
+  .virtual-events-section .swipe-sessions-card {
+    margin: var(--spacing-lg) 0;
+    width: 100%;
+  }
 
-    /* Footer Section */
+  .virtual-events-section .swipe-sessions-card .secondary-text {
+    width: 100%;
+  }
 
-    .footer .section-container {
-      flex-wrap: wrap;
-    }
-  
-    .footer .col {
-      width: 50%;
-      margin: var(--spacing-md) 0;
-    }
-  
-    .footer .col a {
-      font-size: 12px;
-    }
-  
-    #footer-logo {
-      width: 70px;
-    }
-  
-    .footer .icon-link img {
-      width: 18px;
-    }
+  .virtual-events-section .swipe-sessions-card .card-top {
+    height: 40%;
+  }
 
+  #sessions-logo {
+    width: 300px;
+  }
+
+  /* Footer Section */
+
+  .footer .section-container {
+    flex-wrap: wrap;
+  }
+
+  .footer .col {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
+
+  .footer .col a {
+    font-size: 12px;
+  }
+
+  #footer-logo {
+    width: 70px;
+  }
+
+  .footer .icon-link img {
+    width: 18px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  :root {
+      --h1-size: 50px;
+      --h1-height: 60px;
+  }
 }
 
 html,
