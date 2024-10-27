@@ -761,6 +761,8 @@ p {
     padding: 0 var(--spacing-md);
   }
 
+  /* VIRTUAL EVENTS SECTION */
+
   .swipe-sessions-card {
     width: 400px;
     height: 400px;
@@ -785,6 +787,8 @@ p {
   .integrations-section .col-left {
     width: 90%;
   }
+
+  /* VIRTUAL EVENTS SECTION */
 
   .swipe-sessions-card {
     width: 360px;
@@ -842,6 +846,36 @@ p {
 
   .global-section .card-container .card {
     width: 50%;
+    margin: var(--spacing-md) 0;
+  }
+
+  .global-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
+
+  /* VIRTUAL EVENTS SECTION */
+
+  .swipe-sessions-card {
+    width: 300px;
+    height: 480px;
+   
+  }
+
+  #sessions-logo {
+    width: 280px;
+  }
+
+  /* GETTING STARTED SECTION */
+
+  .getting-started-section .two-column {
+    align-items: center;
+  }
+  .getting-started-section .col-right {
+    flex-wrap: wrap;
+  }
+  .getting-started-section .col-right .card {
+    width: 100%;
     margin: var(--spacing-md) 0;
   }
 
@@ -903,6 +937,29 @@ p {
   
     #sessions-logo {
       width: 300px;
+    }
+
+    /* Footer Section */
+
+    .footer .section-container {
+      flex-wrap: wrap;
+    }
+  
+    .footer .col {
+      width: 50%;
+      margin: var(--spacing-md) 0;
+    }
+  
+    .footer .col a {
+      font-size: 12px;
+    }
+  
+    #footer-logo {
+      width: 70px;
+    }
+  
+    .footer .icon-link img {
+      width: 18px;
     }
 
 }
