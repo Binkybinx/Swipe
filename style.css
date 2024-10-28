@@ -793,6 +793,15 @@ p {
     width: 40%;
   }
 
+  /* PARTNERS GRID */
+
+  .partners-section {
+    margin: 10px 0 0 0;
+  }
+  .partners-grid {
+    margin: 0 0 var(--spacing-xl) 0;
+  }
+
   #gradient-canvas {
     height: 900px;
   }
@@ -832,6 +841,11 @@ p {
   /* HERO SECTION */
   .hero-phone {
     transform: translateY(-85px);
+  }
+
+  /* Partners Grid */
+  .partners-section {
+    margin: -20px 0 0 0;
   }
 
   .partners-grid img {
@@ -902,6 +916,11 @@ p {
   .hero-phone {
     height: 450px;
     transform: translateX(32px);
+  }
+
+  /* PARTNERS GRID */
+  .partners-section {
+    margin: 20px 0 0 0;
   }
 
   /* UNIFIED PLATFORM */
@@ -1011,6 +1030,12 @@ p {
 
   .hero .two-column .hero-phone-container {
     display: none;
+  }
+
+  /* PARTNERS GRID SECTION */
+
+  .partners-section {
+    margin: var(--spacing-xl) 0 var(--spacing-sm) 0;
   }
 
   .partners-grid {
